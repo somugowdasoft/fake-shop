@@ -2,7 +2,7 @@ import React from 'react';
 
 const CartModal = ({ cart, removeFromCart, setIsModalOpen }) => {
   return (
-    <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+    <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center overflow-auto items-center">
       <div className="bg-white p-6 rounded-lg w-96">
         <h2 className="text-xl font-bold mb-4">Cart Items</h2>
         {cart.length === 0 ? (
