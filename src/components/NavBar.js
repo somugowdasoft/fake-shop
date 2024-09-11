@@ -4,7 +4,7 @@ import { ShoppingCartIcon } from '@heroicons/react/16/solid';
 
 function NavBar({ setIsModalOpen , cartCount }) {
     return (
-        <nav className='bg-slate-500  flex justify-between items-center sticky top-0'>
+        <nav className='bg-custom-gradient flex justify-between items-center sticky top-0'>
             <a href='/'>
                 <img
                     src={logo}
@@ -16,7 +16,7 @@ function NavBar({ setIsModalOpen , cartCount }) {
             <button onClick={() => setIsModalOpen(true)} className="relative flex items-center text-white mr-3">
                 <ShoppingCartIcon className="h-10 w-10" />
                 {cartCount > 0 && (
-                    <span className="absolute -top-1 -right-1 bg-red-500 rounded-full h-6 w-6 text-xs flex items-center justify-center">
+                    <span className="absolute -top-1 -right-1 bg-custom-gradient rounded-full h-6 w-6 text-xs flex items-center justify-center">
                         {cartCount}
                     </span>
                 )}
