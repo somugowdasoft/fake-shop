@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="bg-gray-100 ">
       <NavBar cartCount={cart.length} setIsModalOpen={setIsModalOpen} />
-      <ProductList addToCart={addToCart} />
+      <ProductList addToCart={addToCart} cartItems={cart} />
       {isModalOpen && (
         <CartModal cart={cart} removeFromCart={removeFromCart} setIsModalOpen={setIsModalOpen} />
       )}
